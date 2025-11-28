@@ -855,7 +855,7 @@ margin-top: -120px;
 
 /* ご挨拶 */
 .greeting-section {
-  padding: 60px 20px 80px;
+  padding: 60px 20px 40px;
   background-color: #fff;   
 }
 .greeting-section .container {
@@ -892,6 +892,7 @@ footer {
   padding: 20px 0;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 61px;
 }
 footer .copyright {
   color: #fff;
@@ -2007,7 +2008,9 @@ padding: 40px 40px 220px ;
   font-size: 22px;
   line-height: 1.6;
 }
-
+footer {
+   margin-bottom: -10px;
+}
 footer .copyright {
   font-size: 14px;
 }
