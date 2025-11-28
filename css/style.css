@@ -171,6 +171,7 @@ overflow: visible;
 .reason3-1-img {
   mask-image: linear-gradient(to left, transparent 0%, black 10%);
 }
+
 .reason-container-2-1 {
   margin-bottom: -20px; 
   position: relative;
@@ -213,13 +214,17 @@ margin-top: -120px;
   color:#F97316;
   font-weight: 600;
 }
-.reason-container-2,
-.reason-container-3 {
+.reason-container-2 {
   margin-top: 100px;
+}
+
+.reason-container-3 {
+  margin-top: 50px !important;
 }
 .reason-container-2-1 {
   margin-top: 0px;
 }
+
 .feature-text-1,
 .feature-text-2 {
   letter-spacing: 0.8px;
@@ -910,7 +915,7 @@ footer .copyright {
 }
 
 /* 各ボタン共通 */
-.cta-btn {
+/* .cta-btn {
   flex: 1;                   
   height: 70px;                 
   display: flex;
@@ -923,7 +928,6 @@ footer .copyright {
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
-  /* font-size: 13px; */
   box-sizing: border-box;
 }
 .cta-line {
@@ -933,18 +937,26 @@ footer .copyright {
   background: #E11D48;
 }
 .cta-btn i {
-  font-size: 12px;
+  font-size: 10px;
   flex-shrink: 0;            
-  /* margin-left: 8px; */
+  
+}
+.cta-text-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cta-title {
+  font-size: 13px;
 }
 .cta-text {
   flex: 1;
   text-align: center;           
   line-height: 1.25;
-  font-size: 12px;
+  font-size: 14px;
 }
 .cta-number {
-  /* font-size: 15px; */
+  font-size: 14px;
   white-space: nowrap;      
 }
 .cta-line i {
@@ -955,13 +967,181 @@ footer .copyright {
   margin-left: 2px;   
   font-size: 14px;
 }
-/* メールボタン */
+
+.cta-tel {
+  justify-content: center;  
+}
+
+
+.cta-tel .cta-text {
+     flex: auto;         
+  min-width: 160px;   
+  max-width: 240px;   
+  text-align: left;
+  line-height: 1.3;
+}
+
+
+.cta-tel i {
+  margin-left: 0;
+  margin-right: 8px;        
+  font-size: 20px;
+}
+
+
 .cta-mail {
   background: #F59E0B;  
 }
 .cta-mail i {
   margin-left: 2px;
   font-size: 16px;
+}
+
+
+
+.fixed-cta-wrap {
+  display: flex;
+  flex-direction: column; 
+  gap: 8px;
+}
+
+
+.cta-full {
+  width: 100%;
+}
+
+.cta-row {
+  display: flex;
+  gap: 6px;
+}
+
+
+.cta-tel {
+  justify-content: center;  
+}
+
+
+.cta-tel .cta-text {
+  flex: 0 1 auto;            
+  min-width: 130px;         
+  text-align: center;
+}
+
+
+.cta-tel i {
+  margin-left: 0;
+  margin-right: 10px;       
+  font-size: 20px;
+} */
+/* 画面下に固定されるエリア全体 */
+.fixed-cta-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);   /* 中央寄せ */
+  width: 100%;
+  padding: 6px 4px;
+  box-sizing: border-box;
+  background-color: rgba(15, 23, 42, 0.5); /* 半透明の背景 */
+  display: flex;
+  flex-direction: column;  /* 1段目＋2段目の縦並び */
+  gap: 8px;
+  z-index: 9999;
+}
+
+/* 1段目（電話）フル幅 */
+.cta-full {
+  width: 100%;
+}
+
+/* 2段目（LINE＋メール）を横並びにするラッパー */
+.cta-row {
+  display: flex;
+  gap: 6px;
+}
+
+/* 各ボタン共通 */
+.cta-btn {
+  flex: 1;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 8px;
+  margin: 0 2px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.cta-btn i {
+  flex-shrink: 0;
+}
+
+/* ボタン別の色 */
+.cta-line { background: #00C300; }
+.cta-mail { background: #F59E0B; }
+.cta-tel  { 
+  background: #E11D48;
+}
+.cta-line ,
+.cta-mail ,
+.cta-tel  { 
+  justify-content: center;   
+}
+
+/* テキスト系 */
+.cta-text-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 13px;
+}
+
+.cta-text {
+  flex: 1;
+  text-align: center;
+  line-height: 1.25;
+  font-size: 14px;
+}
+
+.cta-number {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* アイコンサイズ＆位置調整 */
+.cta-line i {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.cta-mail i {
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.cta-tel i {
+  font-size: 20px;
+  margin-right: 10px;   /* テキストの左横にくっつける */
+}
+
+/* 電話テキストだけ、少し幅を持たせる */
+.cta-tel .cta-text {
+  flex: 0 1 auto;       /* 電話だけ「自然な幅」に */
+  min-width: 150px;     /* 折り返し防止。170〜190pxでお好み調整OK */
+  text-align: center;
+  line-height: 1.3;
+}
+/* メールボタン内のテキストは幅を取りすぎないようにする */
+.cta-mail .cta-text {
+  flex: 0 1 auto;    /* ← ここがポイント！ */
+  text-align: left;  /* お好みで center でもOK */
 }
 
 body {
@@ -1835,43 +2015,40 @@ footer .copyright {
 /* 各CTAボタン共通 */
 
 .fixed-cta-wrap {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);   /* ← 左右中央にする最重要 */
-  width: 100%;
-  /* max-width: 1900px;            */
-  display: flex;
-  z-index: 9999;
-  padding: 6px 4px;
-  box-sizing: border-box;
-  /* うしろの影（背景） */
-  background-color: rgba(15, 23, 42, 0.5);
-  padding: 20px 0;    
-  justify-content: center;
-}
+    flex-direction: row;   /* ← 横並びに */
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: rgba(15, 23, 42, 0.7);
+  }
 
-.cta-text {
-  flex: 1;
-  line-height: 1.25;
-  font-size: 15px;
-  margin-right: 20px;
-}
-
+  /* 各ボタンの高さを少し低く（PC向けに調整） */
   .cta-btn {
-    flex: none;      /* ← flex:1 を解除！ここ重要 */
-    width: 350px;   
-    height: 90px;  
-    font-size: 18px; /* テキスト大きく（任意） */
+    height: 80px;
+    margin: 0 6px;
+    justify-content: center; /* PCは全部中央寄せで綺麗に */
   }
 
-  .cta-btn i {
-    font-size: 32px;
-    margin-left: 20px;
+  /* スマホの2段構成を解除 */
+  .cta-full {
+    width: auto;
+  }
+  .cta-row {
+    display: contents;  /* LINEとメールを独立させて横並びに */
   }
 
-  .cta-number {
-    font-size: 22px;
+  /* テキスト幅調整（PCは広くなるので不要なmin-widthを解除） */
+  .cta-tel .cta-text,
+  .cta-mail .cta-text {
+    min-width: auto;
+    text-align: center;
+  }
+
+  /* アイコンとテキストの距離もPC向けに調整 */
+  .cta-tel i,
+  .cta-mail i,
+  .cta-line i {
+    margin-right: 8px;
   }
 
 body {
