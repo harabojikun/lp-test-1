@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon alternate" href="images/favicon.png" type="image/png">
+  <title>探偵事務所</title>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-container">
+
+      <!-- スマホ用 -->
+      <a href="tel:0120469061" class="header-sp">
+        <img src="images/header.png" alt="大阪浮気調査専門探偵事務所" class="header-image">
+      </a>
+
+      <!-- PC用 -->
+      <div class="header-pc">
+        <img src="images/header-pc.png" alt="ロゴ PC">
+        <a href="tel:0120469061">
+          <img src="images/header-pc-tel.png" alt="電話番号バナー PC">
+        </a>
+      </div>
+    </div>
+    <!-- ● 王冠画像（ヘッダーの下、FVの上） -->
+    <!-- <img src="images/crown.png" alt="王冠" class="crown-image"> -->
+
+    <img src="images/crown.png" alt="王冠" class="crown-image crown-sp">
+    <img src="images/crown-pc.png" alt="王冠PC" class="crown-image crown-pc">
+
+
+  </header>
+
+
+
+  <!-- メイン -->
+  <main>
+    <!-- FVセクション -->
+    <!-- <section class="fv">
+      <img src="images/fv.png" alt="ファーストビュー画像" class="fv-image">
+    </section> -->
+    <section class="fv">
+      <picture>
+        <!-- 1024px以上なら PC用 fv-pc.png を表示 -->
+        <source srcset="images/fv-pc.png" media="(min-width: 1024px)">
+
+        <!-- 1023px以下はスマホ用 fv.png -->
+        <img src="images/fv.png" alt="ファーストビュー画像" class="fv-image">
+      </picture>
+    </section>
+
+
+
+    <!-- 大阪で選ばれるワケ（見出しセクション） -->
+    <section class="choose-section">
+      <div class="choose-container">
+        <img src="images/oosaka-wake.png" alt="大阪で選ばれるワケ" class="choose-title-img">
+      </div>
+    </section>
+    <!-- ＜お悩みセクション＞ -->
+  
+    <section class="worry-section">
+      <div class="worry-container">
+
+        <picture>
+          <!-- PC用（1024px〜） -->
+          <source srcset="images/worry-pc.png" media="(min-width: 1024px)">
+
+          <!-- SP用 -->
+          <img src="images/worry.png" alt="悩み事と悩む女性" class="worry-img">
+        </picture>
+
+      </div>
+    </section>
+
+
+    <!-- 漫画① -->
+    <section id="manga-1">
+      <div class="container">
+        <img src="images/mangalP_001.jpg" alt="漫画①">
+      </div>
+    </section>
+
+    <!-- プライス -->
+    <section class="price-section">
+      <div class="price-container">
+
+        <picture>
+          <!-- PC (1024px〜) -->
+          <source srcset="images/price-pc.png" media="(min-width: 1024px)">
+
+          <!-- SP -->
+          <img src="images/price.png" alt="格安価格とカメラマンの手とカメラ" class="price-img">
+        </picture>
+
+      </div>
+    </section>
+
+    <!-- そこでアイコン -->
+    <div class="sokode-wrapper">
+      <picture>
+        <!-- PC (1024px〜) -->
+        <source srcset="images/sokode-pc.png" media="(min-width: 1024px)">
+
+        <!-- SP -->
+        <img src="images/sokode.png" alt="そこでアイコン" class="sokode-icon">
+      </picture>
+    </div>
+
+
+    <!-- 理由 -->
+    <section class="reason-section">
+      <div class="reason-inner">
+        <div class="reason-container-1">
+
+          <picture>
+            <!-- PC用（1024px〜） -->
+            <source srcset="images/reason1-pc.png" media="(min-width: 1024px)">
+
+            <!-- SP用 -->
+            <img src="images/reason1.png" alt="選ばれる３つの理由１" class="reason1-img">
+          </picture>
+          <p class="reason-body">
+            地域密着の調査力で、難易度の高い案件も突破。<br>他社では取れなかった証拠を100件以上掴み、<br><span class="saiban">裁判で勝てる結果</span>へ導いてきました。
+          </p>
+
+        </div>
+
+
+        <div class="reason-container-2">
+
+          <picture>
+            <!-- PC用（1024px〜） -->
+            <source srcset="images/reason2-pc.png" media="(min-width: 1024px)">
+
+            <!-- SP用 -->
+            <img src="images/reason2.png" alt="選ばれる３つの理由2" class="reason2-img">
+          </picture>
+          <p class="reason-body">
+            <span class="saiban">専属調査員</span>がスピード調査で迅速対応し、<br>スピード解決へ導きます。
+          </p>
+        </div>
+
+
+
+        <div class="feature-block">
+
+          <!-- ▼▼ SP（スマホ用） ▼▼ -->
+          <div class="feature-sp-group">
+
+            <!-- 背景（feature-3.png） -->
+            <img src="images/feature-3.png" alt="" class="feature-sp-bg">
+
+            <!-- 1つ目 -->
+            <div class="feature-sp-item">
+              <img src="images/feature-1.png" alt="SP1" class="feature-sp-img">
+              <p class="feature-sp-text feature-sp-text-1">「相談したのに流されてしまった」
+                そんな不満を耳にします。大阪浮気調査専門探偵事務所は、お客様一人ひとりにしっかり向き合います。</p>
+            </div>
+
+            <!-- 2つ目 -->
+            <div class="feature-sp-item">
+              <img src="images/feature-2.png" alt="SP2" class="feature-sp-img">
+              <p class="feature-sp-text feature-sp-text-2">担当者が複数だと、同じ話を何度もする負担や、調査開始までの遅れが生じます。
+                大阪浮気調査専門探偵事務所は専属調査員制で、スピーディーに結果を出します。</p>
+            </div>
+
+          </div>
+          <!-- ▲▲ SP ここまで ▲▲ -->
+
+
+          <!-- ▼▼ PC（あなたが作ったコード） ▼▼ -->
+          <div class="feature-pc-group">
+
+            <!-- PC背景 -->
+            <img src="images/feature-pc-3.png" alt="背景画像" class="pc-bg-img">
+
+            <div class="feature-pc-rows">
+
+              <img src="images/feature-subject-1.png" alt="徹底いくまでサポート" class="feature-pc-subject-1">
+
+              <!-- 1段目：左画像＋右テキスト -->
+              <div class="feature-pc-row">
+                <img src="images/feature-pc-1.png" alt="PC用1" class="pc-img-1">
+                <div class="feature-pc-text feature-pc-text-1">
+                  「相談したのに流されてしまった」 そんな不満を耳にします。<br>
+                  大阪浮気調査専門探偵事務所は、お客様一人ひとりにしっかり向き合います。
+                </div>
+              </div>
+
+              <img src="images/feature-subject-2.png" alt="最短5時間スピード調査" class="feature-pc-subject-2">
+
+              <!-- 2段目：左画像＋右テキスト -->
+              <div class="feature-pc-row">
+                <img src="images/feature-pc-2.png" alt="PC用2" class="pc-img-2">
+                <div class="feature-pc-text feature-pc-text-2">
+                  担当者が複数だと、同じ話を何度もする負担や、調査開始までの遅れが生じます。<br>
+                  大阪浮気調査専門探偵事務所は専属調査員制で、スピーディーに結果を出します。
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- ▲▲ PCここまで ▲▲ -->
+
+        </div>
+
+        <div class="reason-container-3">
+          <picture>
+            <!-- PC用（1024px〜） -->
+            <source srcset="images/reason3-pc.png" media="(min-width: 1024px)">
+
+            <!-- SP用 -->
+            <img src="images/reason3.png" alt="選ばれる３つの理由3" class="reason3-img">
+          </picture>
+          <p class="reason-body">
+            「今、動きがありました！」大阪を知り尽くした
+            <br class="pc-only-br">調査員が現場から即時報告。<br>
+            あなたのスマホへ、<span class="saiban">最新の調査状況をリアルタイム</span>でお届けします。
+          </p>
+        </div>
+
+
+
+        <div class="reason-container-3-1">
+          <picture>
+            <!-- PC用（1024px〜） -->
+            <source srcset="images/reason3-img-pc.png" media="(min-width: 1024px)">
+
+            <!-- SP用 -->
+            <img src="images/reason3-img.png" alt="青い男のスマホ画面とリアルタイムでやりとりするスマホ画面" class="reason3-1-img">
+          </picture>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 漫画② -->
+    <section id="manga-2">
+      <div class="container">
+        <img src="images/mangalP_002.jpg" alt="漫画②">
+      </div>
+    </section>
+
+
+    <!-- 嬉しい声 -->
+    <section id="reviews" class="voice-section">
+      <div class="container">
+        <div class="voice-heading">
+          <img src="images/kamifubuki.png" alt="紙吹雪と王冠" class="voice-deco-img">
+
+          <h2><span>3,000</span>件以上の実績</h2>
+          <h3>100%成功率継続中</h3>
+          <h4>お客様からの嬉しい声</h4>
+        </div>
+
+        <!-- 30代女性 -->
+
+        <div class="voice-card">
+          <img src="images/user1.png" alt="女性ユーザー" class="user-img">
+          <div class="voice-header">
+            <p class="voice-age">30代　女性　</p>
+            <p class="voice-star">★★★★★</p>
+          </div>
+          <p class="voice-text">
+            <span class="highlight">押しつけがましい営業もなく、</span>終始こちらの立場に立って考えてくださいました。
+            とても親身になって頂き、調査も報告書も丁寧かつ迅速に対応して頂きました。
+            金額以上の成果を上げて頂き感謝しております。
+            とても優しく丁寧なご対応ありがとうございました。
+          </p>
+        </div>
+
+        <!-- 40代男性 -->
+
+        <div class="voice-card">
+          <img src="images/user2.png" alt="男性ユーザー" class="user-img">
+          <div class="voice-header">
+            <p class="voice-age">40代　男性　</p>
+            <p class="voice-star">★★★★★</p>
+          </div>
+          <p class="voice-text">
+            無料相談では、 <span class="highlight">具体的なシミュレーションやアドバイス</span>をしてくださり、
+            不安だった気持ちが一気に軽くなりました。
+          </p>
+        </div>
+
+        <!-- 20代女性 -->
+
+        <div class="voice-card">
+          <img src="images/user3.png" alt="女性ユーザー" class="user-img">
+          <div class="voice-header">
+            <p class="voice-age">20代　女性　</p>
+            <p class="voice-star">★★★★★</p>
+          </div>
+          <p class="voice-text">
+            初めての依頼で不安もありましたが、親身に対応していただき安心できました。
+            調査報告も分かりやすく、 <span class="highlight">仕事も趣味も前向きに取り組める</span>ようになりました。
+            本当にありがとうございました。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ご相談の流れ -->
+    <section id="flow" class="flow-section">
+      <div class="container">
+        <h2 class="flow-title">ご相談の流れ</h2>
+
+        <div class="flow-steps">
+
+          <!-- STEP1 -->
+          <div class="step-card">
+            <span class="step-badge">無料</span>
+            <p class="step-number">STEP 1</p>
+            <i class="step-icon fa-solid fa-phone"></i>
+            <p class="step-text">
+              まずはお気軽に<br>ご相談ください
+            </p>
+          </div>
+
+          <!-- STEP2 -->
+          <div class="step-card">
+            <span class="step-badge">無料</span>
+            <p class="step-number">STEP 2</p>
+            <i class="step-icon fa-solid fa-comment-dots"></i>
+            <p class="step-text">
+              お話し聞かせて<br>もらいます
+            </p>
+          </div>
+          <img src="images/line2.png" class="flow-line line-23" alt="">
+
+          <!-- 1-2 のライン -->
+          <img src="images/line1.png" class="flow-line line-12" alt="">
+
+
+          <!-- STEP3 -->
+          <div class="step-card">
+            <span class="step-badge">無料</span>
+            <p class="step-number">STEP 3</p>
+            <i class="step-icon fa-regular fa-handshake"></i>
+            <p class="step-text">
+              実際にお会い<br>してお見積もり
+            </p>
+          </div>
+
+          <!-- STEP4 -->
+          <div class="step-card">
+            <p class="step-number">STEP 4</p>
+            <i class="step-icon fa-solid fa-file-signature"></i>
+            <p class="step-text">
+              ご契約
+            </p>
+          </div>
+          <img src="images/line2.png" class="flow-line line-45" alt="">
+
+          <!-- 3-4 のライン -->
+          <img src="images/line1.png" class="flow-line line-34" alt="">
+
+          <!-- STEP5 -->
+          <div class="step-card">
+            <p class="step-number">STEP 5</p>
+            <i class="step-icon fa-solid fa-magnifying-glass"></i>
+            <p class="step-text">
+              調査開始
+            </p>
+          </div>
+          <!-- STEP6 -->
+          <div class="step-card">
+            <p class="step-number">STEP 6</p>
+            <i class="step-icon fa-regular fa-file-lines"></i>
+            <p class="step-text">
+              調査報告書の<br>提出
+            </p>
+          </div>
+          <img src="images/line2.png" class="flow-line line-67" alt="">
+
+          <!-- 5-6 のライン -->
+          <img src="images/line1.png" class="flow-line line-56" alt="">
+          <!-- 5-6 のライン（右側：5→6 の間）新規 -->
+          <img src="images/line1.png" class="flow-line line-56-right" alt="">
+          <!-- STEP3 のあとあたり（3→4 の斜めライン） -->
+          <img src="images/line3.png" class="flow-line line-34-diag" alt="">
+
+          <!-- STEP7 の少し上あたり（6→7 の斜めライン） -->
+          <img src="images/line3.png" class="flow-line line-67-diag" alt="">
+
+
+          <!-- STEP7 -->
+          <div class="step-card step-last">
+            <p class="step-number">STEP 7</p>
+            <i class="step-icon fa-regular fa-heart"></i>
+            <p class="step-text step-text-last">
+              調査後もしっかり<br>サポートします
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="faq-title-en">FAQ</h2>
+        <p class="faq-title-ja">よくあるご質問</p>
+        <dl class="faq-list">
+
+          <!-- Q1 -->
+          <div class="faq-item">
+            <dt class="faq-question">
+              <span class="faq-q">Q</span>
+              秘密は守ってくれますか？
+            </dt>
+            <dd class="faq-answer">
+              弊社は如何なる場合であっても情報漏洩は致しません。
+              情報の管理を徹底しており外部に流出するなどということは一切ありませんのでご安心下さい。
+            </dd>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <dt class="faq-question">
+              <span class="faq-q">Q</span>
+              高い料金を請求されませんか？
+            </dt>
+            <dd class="faq-answer">
+              面談時、弊社はお客様のお話をしっかりヒアリングした上で総額のお見積もりをご提示しております。
+              ホームページに記載している料金以外の請求は一切いたしません。
+            </dd>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <dt class="faq-question">
+              <span class="faq-q">Q</span>
+              調査を断られることはありませんか？
+            </dt>
+            <dd class="faq-answer">
+              基本的に調査をお断りすることはございませんが、違法行為を助長するような調査はお受けできません。
+              また難易度によってお断りすることは原則ございません。
+            </dd>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <dt class="faq-question">
+              <span class="faq-q">Q</span>
+              証拠は裁判で使えますか？
+            </dt>
+            <dd class="faq-answer">
+              弊社の報告書には時系列の行動記録と鮮明な写真を添付しておりますので、
+              裁判で証拠として認められるケースも多くございます。
+            </dd>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <dt class="faq-question">
+              <span class="faq-q">Q</span>
+              離婚せずに解決できる方法はありますか？
+            </dt>
+            <dd class="faq-answer">
+              調査後は、お客様の専属相談員によるカウンセリングを行い、
+              状況に応じたアドバイスや今後の選択肢をご提案いたします。
+            </dd>
+          </div>
+          <!-- Q6 -->
+          <div class="faq-item">
+            <dt class="faq-question">
+              <span class="faq-q">Q</span>
+              見積もりは有料ですか？
+            </dt>
+            <dd class="faq-answer">
+              お見積もりやご相談はすべて無料です。お気軽にお問い合わせください。
+            </dd>
+          </div>
+
+          <!-- Q7 -->
+          <div class="faq-item">
+            <dt class="faq-question">
+              <span class="faq-q">Q</span>
+              調査をしているのは御社ですか？<br>それとも別の会社ですか？
+            </dt>
+            <dd class="faq-answer">
+              調査の実施から報告書の作成まで、当探偵事務所が責任を持って対応いたします。
+              必要に応じて弁護士など専門家のご紹介も含め、ワンストップでサポートいたします。
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="contact-title">お問い合わせフォーム</h2>
+
+        <form id="contactForm" class="contact-form" action="mailto:info@example.com" method="post" enctype="text/plain">
+
+          <!-- お名前 -->
+          <div class="form-group">
+            <label for="name">お名前 (匿名可)
+              <span class="required-badge">必須</span>
+            </label>
+            <input type="text" id="name" name="お名前" placeholder="山田 花子" required>
+          </div>
+
+          <!-- メールアドレス -->
+          <div class="form-group">
+            <label for="email">メールアドレス
+              <span class="required-badge">必須</span>
+            </label>
+            <input type="email" id="email" name="メールアドレス" placeholder="hanako@osaka.co.jp" required>
+          </div>
+
+          <div class="form-group">
+            <label for="tel">お電話番号</label>
+            <input type="tel" id="tel" name="電話番号" placeholder="09012345678" inputmode="numeric" pattern="[0-9]{10,11}"
+              title="電話番号は10桁または11桁の数字で入力してください">
+          </div>
+
+          <!-- 都道府県 -->
+          <div class="form-group">
+            <label for="pref">お住まいの都道府県</label>
+            <input type="text" id="pref" name="都道府県" placeholder="大阪府">
+          </div>
+
+          <!-- ご質問内容 -->
+          <div class="form-group">
+            <label for="message">ご質問内容</label>
+            <textarea id="message" name="ご質問内容" placeholder="ご質問内容をご入力ください。"></textarea>
+          </div>
+
+          <!-- 個人情報の取り扱いについて -->
+          <div class="privacy-wrapper">
+            <div class="privacy-box">
+              　個人情報の取り扱いについて<br>
+              当サイトは、以下の方針に基づき、個人情報の保護に努めます。<br> お客様からお預かりした個人情報は、安心してご利用いただけるよう適切に管理いたします。<br>
+              1. 個人情報の取得と利用目的 <br>当サイトでは、お問い合わせやご相談などの際に、氏名・電話番号・メールアドレスなどの個人情報をお預かりすることがあります。<br>
+              これらの情報は、ご相談への回答やご連絡など、明示した目的の範囲内でのみ利用し、それ以外の目的には使用いたしません。<br>
+              2. 個人情報の管理 <br>個人情報の漏えい、紛失、改ざんなどを防止するため、適切な安全管理体制のもとで保護に努めます。<br> また、情報を正確かつ最新の状態に保つよう努めます。<br>
+              3. 第三者への提供について<br> 法令で定められた場合を除き、ご本人の同意なく個人情報を第三者に提供することはありません。<br>
+              4. 開示・訂正・削除等のご請求<br> ご本人から、提供いただいた個人情報の開示・訂正・削除・利用停止などを求められた場合は、速やかに対応いたします。<br>
+              5. アクセス解析ツールの利用について<br> 当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。<br>
+              このツールはトラフィックデータ収集のためにCookieを使用しており、データは匿名で収集され、個人を特定するものではありません。<br>
+              Cookieの使用を望まない場合は、ブラウザの設定で無効にすることができます。<br>
+              詳しくはGoogle アナリティクス利用規約をご確認ください。
+            </div>
+
+
+          </div>
+          <div class="agree-wrapper">
+            <label class="agree-area">
+              <input type="checkbox" id="agree" name="同意" value="はい" required>
+              <span>個人情報の取り扱いに同意する</span>
+            </label>
+          </div>
+
+          <!-- 送信ボタン -->
+          <div class="submit-area">
+            <button type="submit" id="contactSubmit" class="submit-btn" disabled>送信する</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- 事務所概要 -->
+    <section id="office" class="office-section">
+      <div class="container">
+        <div class="office-card">
+          <h2 class="office-title">事務所概要</h2>
+
+          <div class="office-block">
+            <p class="office-label">サイト名</p>
+            <p class="office-text">大阪浮気調査専門探偵事務所</p>
+          </div>
+
+          <div class="office-block">
+            <p class="office-label">本社所在地</p>
+            <p class="office-text">
+              〒530-0002<br>
+              大阪府大阪市北区曽根崎新地2丁目6番地
+            </p>
+          </div>
+
+          <div class="office-block">
+            <p class="office-label">電話番号</p>
+            <p class="office-text">0120-469-061</p>
+          </div>
+
+          <div class="office-block">
+            <p class="office-label">営業時間</p>
+            <p class="office-text">9:00〜21:00</p>
+          </div>
+
+          <div class="office-block last">
+            <p class="office-label">事業内容</p>
+            <p class="office-text">
+              浮気調査・素行調査・保険調査<br>
+              内偵調査・企業調査<br>
+              ストーカー被害・DV調査
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ご挨拶 -->
+    <section id="greeting" class="greeting-section">
+      <div class="container">
+        <div class="greeting-card">
+          <h2 class="greeting-title">ご挨拶</h2>
+          <div class="greeting-title-line"></div>
+          <div class="greeting-body">
+            <p>
+              はじめまして。大阪で浮気調査に特化した探偵事務所の大阪浮気調査専門探偵事務所です。<br>私たちは大阪を対象に、浮気調査専門で行っている探偵事務所になります。<br>大阪という街の生活動線、繁華街の時間割、ビジネス街の出入り、住宅街の車両動向まで、大阪の浮気調査に必要な“地の利”を熟知した探偵事務所として、結果に直結する調査設計と証拠化を徹底します。初めてのご連絡でも、秘密厳守・匿名可。ご家族や職場に知られない配慮は当然の前提です。
+            </p>
+
+            <p>
+              私たちの3000件の実績と100％の成功率継続中の実績があります。<br>浮気調査は、事前分析→ピンポイント投入→短時間で確実な証拠が基本。<br>対象者の通勤経路、最寄駅からの動線、よく使う商業施設や飲食店、ビジネスホテルやラブホテルの利用傾向、タクシー・カーシェアの移動パターンまで、癖をデータと現場感で読み解きます。<br>証拠は「撮れたらOK」ではなく、使えることが重要です。大阪の浮気調査で取得した写真・動画・位置情報・時系列記録を、探偵事務所の報告書として論点別に整理。行動の因果関係や関与度が読み取れるよう、地図・タイムライン・注釈を付して提出します。男性の依頼者が次に取るべき選択・・・話し合い・別居・協議・法的手続き・・・いずれにも耐える資料精度を確保。必要に応じて大阪の弁護士のご紹介も可能です。離婚を選ぶ場合も、修復を選ぶ場合も、客観的で強度のある報告書があなたの判断を支えます。
+            </p>
+
+            <p>
+              料金は明瞭な見積りを徹底。時間制プランと定額プランをご用意し、事前分析に基づいて人員・車両・機材の投入量を設計します。<br>大阪の浮気調査で起こりがちな「だらだら長時間の張り込み」を避け、事前検討で当たりを絞ることで費用対効果を最大化。想定外の延長が生まれにくいよう、増減精算のルールも事前に共有します。男性の依頼者が抱きがちなコスト不安を軽減するため、段階実施や分割取得など現実的な選択肢もご提案します。
+            </p>
+
+            <p>
+              相談体制は、大阪での対面・電話・チャットに対応。仕事の合間や深夜帯しか時間が取れない方にも寄り添えるよう、柔軟な連絡窓口を設けています。初回は無料・匿名可。大阪の探偵事務所に連絡する一歩は勇気が要りますが、その一歩で眠れない夜は確実に減るはずです。「本当に浮気調査が必要か」「今は動くべきか待つべきか」も含め、メリット・デメリットをフラットに説明します。調査をしない判断が最善のときは、はっきりお伝えします。
+            </p>
+
+            <P>
+              私たちが浮気調査に限定とする理由は、浮気調査が抱えやすい葛藤やリスクに、より的確に向き合うためです。感情の起伏、生活や仕事への影響、家計・資産の論点、子どものこと・・・整理し、大阪の浮気調査から次のアクションまで、実務的に伴走します。小さな違和感でも構いません。「帰宅時間が不自然に遅い」「予定の取り消しが増えた」「スマホの扱いが急に変わった」・・・そんなサインが積み重なったときは、大阪の浮気調査に強い探偵事務所へご相談ください。
+            </P>
+
+            <p>
+              どうか、今日このページを開いた理由を見失わないでください。大阪浮気調査専門探偵事務所は、大阪の浮気調査のみ対応の方針で、地元大阪の知見と探偵事務所としての技術・倫理をかけ合わせ、あなたの尊厳と時間を守る調査を提供します。事実を知ることは、感情に流されず「自分で選ぶ」力を取り戻すこと。大阪の浮気調査なら、私たちにお任せください。まずは無料相談から、言葉にするところを一緒に始めましょう。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="copyright">
+      © 2025 大阪浮気調査専門探偵事務所.All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <script>
+    const agreeCheckbox = document.getElementById('agree');
+    const submitBtn = document.getElementById('contactSubmit');
+
+    // チェックが入るまで送信ボタンを無効化
+    if (agreeCheckbox && submitBtn) {
+      agreeCheckbox.addEventListener('change', function () {
+        submitBtn.disabled = !this.checked;
+      });
+    }
+  </script>
+
+  <!-- CTAボタン -->
+  <div class="fixed-cta-wrap">
+
+    <!-- 電話（1段目フル幅） -->
+    <a href="tel:0120469061" class="cta-btn cta-tel cta-full">
+      <img src="images/cta-tel-sp.png" alt="秘密厳守！ご相談はこちら 0120-469-061" class="cta-img cta-img-tel">
+    </a>
+
+    <div class="cta-row">
+      <!-- LINE -->
+      <a href="https://lin.ee/Ew5SvWp" class="cta-btn cta-line">
+        <img src="images/cta-line-sp.png" alt="24時間365日対応LINE電話で無料相談!" class="cta-img cta-img-line">
+      </a>
+
+      <!-- メール -->
+      <a href="mailto:info@uwakichousa-tantei.jp" class="cta-btn cta-mail">
+        <img src="images/cta-mail-sp.png" alt="匿名OK！メールで即日対応" class="cta-img cta-img-mail">
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
